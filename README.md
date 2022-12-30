@@ -18,5 +18,8 @@ hugo new site hugo-thema
 
 ```shell 
 cd hugo-theme
-
+git init
+git submodule add https://github.com/theNewDynamic/gohugo-theme-ananke themes/ananke
+echo "theme = 'ananke'" >> config.toml
+hugo server
 ```
